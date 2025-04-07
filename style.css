@@ -10,6 +10,11 @@ a{
 ul,ol,li{
     list-style: none;
 }
+:root{
+  --primary-color:#F07807;
+  --secundary-color:#FBDDC1;
+  --defalt-shadow: 0 4px 6px #0004;
+}
 body{
     font-family: "Poppins", sans-serif;
     padding: 0 80px;
@@ -34,13 +39,23 @@ header menu{
     
 }
 header li{
-    background-color: lightblue;
+    
     padding: 4px 8px; 
+    transition: 0.5;
     
 }
 header li:hover{
-    background-color: #FBDDC1;
-    box-shadow: 0 4px 6px #0004;
+    background-color: var(--secundary-color);
+    box-shadow: var(--defalt-shadow)
+
+}
+header button{
+    height: 48px;
+    width: 120px;
+    border-radius: 12px;
+    background-color: var(--secundary-color);
+    box-shadow: var(--defalt-shadow);
+    align-items: center;
 }
 main{
     height: 700px;
