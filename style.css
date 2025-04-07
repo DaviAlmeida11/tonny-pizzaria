@@ -11,15 +11,18 @@ ul,ol,li{
     list-style: none;
 }
 body{
-    display: grid;
-    grid-template-rows: 60px 700px 526px;
+    
+    padding: 0 80px;
 
 }
 header{
     position: absolute;
     background-color: lightblue;
+    width: calc(100% - 160px);
     height: 60px;
-    width: 100%;
+    top: 60px;
+    position: fixed;
+    
 }
 main{
     height: 700px;
