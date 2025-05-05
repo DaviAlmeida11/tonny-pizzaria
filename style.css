@@ -87,14 +87,14 @@ section {
 .hero span{
     color:var(--primary-color)
 }
-.container-pizza{
+.container-produto{
     display: flex;
     align-items: center;
     justify-content: space-between;
     
     
 }
-.pizza{
+.produto{
     background-color: #F07807;
     display: flex;
     border-radius: 12px;
@@ -119,7 +119,7 @@ section {
     opacity: 0;
     transition: .5s;
 }
-.pizza:hover .adicionar{
+.produto:hover .adicionar{
     opacity:1
 }
 .animacao{
@@ -144,7 +144,7 @@ section {
     border-radius: 0 0 12px 12px;
     transition: .5s;
 }
-.pizza:hover .container-info{
+.produto:hover .container-info{
     bottom: 0px;
 }
 .container-info p {
@@ -164,12 +164,61 @@ section {
 
 }
 .cardapio{
-     background-color: aquamarine;
+     background-color: white;
+}
+.titulo-secao{
+    font-size: 2.5rem;
+    font-weight: 500;
+    
+}
+
+
+.cardapio-item{
+    display: flex;
+    flex-direction: column;
+    border-bottom:  solid var(--primary-color);
+    justify-content: space-evenly;
+    height: 300px;
+   
+    
+}
+
+
+.cabecalho-item {
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary-color);
+}
+.cabecalho-item h4,
+ .cabecalho-item a {
+     font-size: 1.5rem;
+     font-weight: 600;
+ }
+ .cardapio-item.bebidas{
+    border: none;
+ }
+ .cardapio-item.bebidas .produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    padding: 16px;
+    transition: .5s;
+}
+.cardapio-item.bebidas .produto:hover{
+    box-shadow: 2px 2px 8px #bbb;
+}
+.cardapio-item.bebidas.valor{
+    font-size: 1rem;
+    color: var(--primary-color);
+    width: 100%;
+}
+.cardapio-item.bebidas .descricao {
+    font-size: 0.5rem;
+    width: 100%;
 }
 serviços{
     background-color: #F07807;
 }
-footer{
-    height: 525px;
-    background-color: tomato;
-}
+
